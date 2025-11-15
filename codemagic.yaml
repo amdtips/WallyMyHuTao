@@ -1,4 +1,10 @@
 workflows:
+  android-build:
+    scripts:
+      - chmod +x gradlew
+      - ./gradlew assembleRelease
+
+workflows:
   android-release:
     name: Build MyWally
     scripts:
