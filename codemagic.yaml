@@ -1,7 +1,7 @@
 workflows:
-  android-build:
+  android-release:
+    name: Build MyWally
     scripts:
-      - chmod +x gradlew
       - ./gradlew assembleRelease
     artifacts:
       - app/build/outputs/**/*.apk
